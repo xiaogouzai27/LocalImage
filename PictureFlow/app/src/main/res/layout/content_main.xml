@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.everp2p.pictureflow.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/TopTitle"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="萨摩耶"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <!--第一张-->
+    <ImageView
+        android:id="@+id/imgone"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:background="@drawable/image01"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/TopTitle"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="第一张照片"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/imgone"
+        android:layout_marginLeft="16pt"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <!--第二张-->
+    <ImageView
+        android:id="@+id/imgtwo"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:background="@drawable/image02"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/TopTitle"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/texttwo"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="第二张照片"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/imgtwo"
+        android:layout_marginRight="16pt"
+        app:layout_constraintRight_toRightOf="parent" />
+    <!--第三张-->
+    <ImageView
+        android:id="@+id/imgthree"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:background="@drawable/image03"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgone"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/textthree"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="第三张照片"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/imgthree"
+        android:layout_marginLeft="16pt"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <!--第四张-->
+    <ImageView
+        android:id="@+id/imgfour"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:background="@drawable/image04"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgtwo"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/textfour"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="第四张照片"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/imgfour"
+        android:layout_marginRight="16pt"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
